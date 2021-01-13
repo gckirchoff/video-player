@@ -188,6 +188,7 @@ fullscreenButton.addEventListener('click', toggleFullscreen)
 
 const input = document.querySelector('input');
 const imageContainer = document.getElementById('image-container');
+const formContainer = document.getElementById('form-container');
 
 
 
@@ -198,6 +199,7 @@ function loadFile(event) {
     // image.src = URL.createObjectURL(event.target.files[0]);
     // imageContainer.appendChild(image);
     video.src = URL.createObjectURL(event.target.files[0]);
+    formContainer.hidden = true;
 }
 
 
